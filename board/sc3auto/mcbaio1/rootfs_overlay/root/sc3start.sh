@@ -4,7 +4,7 @@
 ln -s /dev/rtc1 /dev/rtc
 hwclock --hctosys
 
-mv /root/uploads/!(dummy.txt) /root/.
+mv /root/uploads/* /root/.
 
 echo 141 > /sys/class/gpio/export
 echo in > /sys/class/gpio/gpio141/direction
@@ -99,4 +99,5 @@ echo out > /sys/class/gpio/gpio156/direction
 echo 155 > /sys/class/gpio/export
 echo out > /sys/class/gpio/gpio155/direction
 
-#/home/root/nodeDemoLnx
+# Ensure that the following comment ends with '&'
+#/root/nodeRtLnx &
