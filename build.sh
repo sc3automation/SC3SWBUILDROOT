@@ -1,6 +1,6 @@
 #!/bin/sh
 
-make sc3_mcbaio1_defconfig
+make sc3auto_mcbaio1_defconfig
 make
 rm output/target/etc/ld.so.conf
 make
