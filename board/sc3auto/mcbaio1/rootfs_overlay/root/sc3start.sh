@@ -1,10 +1,11 @@
 #!/bin/sh
-#. /etc/profile.d/wayland_env.sh
 
 ln -s /dev/rtc1 /dev/rtc
 hwclock --hctosys
 
 mv /root/uploads/* /root/.
+sync
+sync
 
 echo 141 > /sys/class/gpio/export
 echo in > /sys/class/gpio/gpio141/direction
@@ -99,5 +100,6 @@ echo out > /sys/class/gpio/gpio156/direction
 echo 155 > /sys/class/gpio/export
 echo out > /sys/class/gpio/gpio155/direction
 
-# Ensure that the following comment ends with '&'
-#/root/nodeRtLnx &
+chmod a+x /root/nodeRtLnx
+# Ensure that the following line ends with '&'
+/root/nodeRtLnx &
