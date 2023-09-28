@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#Store version in rootfs
+echo $1.$2.$3-$4 > board/sc3auto/mcbaio1/rootfs_overlay/etc/sc3version 
+
 make sc3auto_mcbaio1_defconfig
 make
 rm output/target/etc/ld.so.conf
