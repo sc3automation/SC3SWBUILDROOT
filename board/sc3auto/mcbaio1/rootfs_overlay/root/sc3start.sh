@@ -83,10 +83,10 @@ echo out > /sys/class/gpio/gpio121/direction
 
 echo 7 > /sys/class/gpio/export
 echo out > /sys/class/gpio/gpio7/direction
-echo 12 > /sys/class/gpio/export
-echo out > /sys/class/gpio/gpio12/direction
-echo 13 > /sys/class/gpio/export
-echo out > /sys/class/gpio/gpio13/direction
+echo 88 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio88/direction
+echo 154 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio154/direction
 echo 14 > /sys/class/gpio/export
 echo out > /sys/class/gpio/gpio14/direction
 
