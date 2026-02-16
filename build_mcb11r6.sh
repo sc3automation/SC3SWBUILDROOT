@@ -13,5 +13,6 @@ cp ./output/images/u-boot.img .
 cp ./output/images/zImage .
 cp ./output/images/am437x-mcb11.dtb .
 cp ./output/images/rootfs.tar .
+gzip rootfs.tar
 
-zip SW-1084-E$1.$2.$3-$4.zip ./zImage ./am437x-mcb11.dtb ./MLO ./u-boot.img ./rootfs.tar
+zip SW-1084-E$1.$2.$3-$4.zip ./zImage ./am437x-mcb11.dtb ./MLO ./u-boot.img ./rootfs.tar.gz
